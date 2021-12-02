@@ -1,0 +1,23 @@
+{
+  "name": "page-fetcher",
+  "version": "1.0.0",
+  "main": "fetcher.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenryChidozie/page-fetcher.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HenryChidozie/page-fetcher/issues"
+  },
+  "homepage": "https://github.com/HenryChidozie/page-fetcher#readme",
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "request": "^2.88.2"
+  }
+}
