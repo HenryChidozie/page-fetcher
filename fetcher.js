@@ -6,7 +6,7 @@ const fs = require("fs");
 //if file URL is invalid
 request(`${arg[0]}`, (error, response, body) => {
   if (error || response.statusCode !== 200) {
-    console.log("Something went wrong.  Please check your URL");
+    console.log("Oops, that did not work.  Please check your URL");
     return;
   }
   console.log(arg[1]);
@@ -15,8 +15,9 @@ request(`${arg[0]}`, (error, response, body) => {
       console.error(err);
       return;
     }
+
     //file written successfully
-    console.log('file write success');
+    console.log('File was successfully written');
     let body = fs.statSync(arg[1]);
     console.log(`Downloaded and saved ${body.length} bytes to ${arg[1]}`);
   });
@@ -28,7 +29,7 @@ request(`${arg[0]}`, (error, response, body) => {
     (err, data) => {
       if (data !== undefined) {
         if (data.length > 0) {
-          console.log('the file already exists');
+          console.log('File already exists');
           return;
         }
       }
